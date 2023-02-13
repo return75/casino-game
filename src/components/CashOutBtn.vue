@@ -11,7 +11,7 @@ export default {
     translateRandomly(e) {
       let chance = Math.random()
       if(chance <= .5) {
-        let direction = ['+', '-'][Math.floor(Math.random() * 2)]
+        let direction = ['', '-'][Math.floor(Math.random() * 2)]
         e.target.style.transform = `translateX(${direction}300px)`
       }
     }
