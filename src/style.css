@@ -21,14 +21,16 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
-
 button {
+  background: transparent;
   border-radius: 8px;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  border: 1px solid white;
+  margin-top: 3rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 0.3em .6em;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: 0.25s;
 }
 #app {
   max-width: 1280px;
