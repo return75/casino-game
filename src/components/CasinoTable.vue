@@ -97,8 +97,10 @@ export default {
       }
     },
     giveUserScore() {
-      let score = this.letters.first.score
-      this.score += score
+      this.showLettersWithDelay().then(() => {
+        let score = this.letters.first.score
+        this.score += score
+      })
     },
     reduceScore() {
       this.showLettersWithDelay().then(() => {
